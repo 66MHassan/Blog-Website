@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import 'D:/Blog-website/client/node_modules/bootstrap/dist/css/bootstrap.min.css';
-import '../index.css'
-
+import '../index.css';
+import Axios from 'axios';
 const PostCreation = () => {
   const [formData, setFormData] = useState({
     title: '',
@@ -17,8 +17,10 @@ const PostCreation = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can handle form submission here, e.g., send the data to an API
+    // handle form submission here, e.g., send the data to an API
+    Axios.post("http://localhost:8000/creatingPost",formData)
     console.log(formData);
+    console.log("Data is Submitted...")
   };
 
   return (

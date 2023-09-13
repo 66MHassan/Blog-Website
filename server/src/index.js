@@ -32,7 +32,7 @@ app.get("/listdata",(req,res)=>{
     db.query('select * from post',(err,result)=>{
         if(err){console.log(err)}
 
-    console.log(JSON.stringify(result));
+     res.send(JSON.stringify(result));
     })
 
 })

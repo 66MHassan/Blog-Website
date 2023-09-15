@@ -21,6 +21,12 @@ export default function NavBar (){
         <li className="nav-item">
           <Link className="nav-link" to="ListData">All Posts</Link>
         </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="AboutUs">About us</Link>
+        </li>
+        <li className="nav-item">
+          <Link className="nav-link" to="Contact">Contact us</Link>
+        </li>
         {/* <li className="nav-item dropdown"> */}
           {/* <Link className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Dropdown

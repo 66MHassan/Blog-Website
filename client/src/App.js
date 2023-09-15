@@ -4,6 +4,8 @@ import PostCreation from './pages/PostCreation';
 import ListData from './pages/ListData';
 import Home from './pages/Home';
 import NavBar from './components/NavBar';
+import AboutUs from './pages/AboutUs';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -14,6 +16,8 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/PostCreation" element={<PostCreation />} />
       <Route path="/ListData" element={<ListData />} />
+      <Route path="/AboutUs" element={<AboutUs />} />
+      <Route path="/Contact" element={<Contact />} />
     </Routes>
     </BrowserRouter>
   

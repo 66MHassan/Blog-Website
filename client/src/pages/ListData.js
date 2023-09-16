@@ -1,5 +1,6 @@
 import Axios from "axios";
 import {useState,useEffect} from "react";
+import "../index.css";
 
 export default function ListData(){
     const [data,setData]=useState([]);
@@ -11,17 +12,25 @@ export default function ListData(){
 
     return(
         <>
+        <div className="post-sorting"> 
         {
-            data.map((item)=>{
-                return <ul key={item.id}>
-                    <li>{item.id}</li>
-                    <li>{item.title}</li>
-                    <li>{item.content}</li>
-                    <li>{item.tags}</li>
-
-                </ul>
+            data.map((item)=>{ 
+                return <div className="post" key={item.id}>
+                
+                <div className="post-header">
+                <img className="profile-image" src="./images/p1.webp" alt="Profile Image" />
+                  <div><h2 className="name">Hassan</h2>
+                  <p className="title">{item.title}</p>
+                  </div>
+                </div>
+                <div >
+                  <img className="post-image" src="./images/1.jpeg" alt="Post Image" />
+                  </div>
+              </div>
+                  
             })
         }
+        </div>
         </>
     )
 }

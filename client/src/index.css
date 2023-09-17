@@ -15,7 +15,7 @@ code {
 /* All posts arranging with Grid */
 .post-sorting{
   display: grid;
-  grid-template-columns: repeat(3, 450px);
+  grid-template-columns: repeat(3, 440px);
   grid-gap:10px;
  
 }
@@ -25,9 +25,18 @@ code {
   display: flex;
   border: 1px solid #ccc;
   margin-bottom: 20px;
-  max-width: 500px;
+  max-width: 480px;
   background-color:#000001d2;
   flex-direction: column;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 1%;
+}
+.post:hover{
+  box-shadow: 1px 1px 5px rgb(81, 81, 191);
+  /* transform: rotate(45deg); */
+  background-color: #000001bd;
+  transform: scale(1.01);
+
 }
 
 /* Style for the profile image */
@@ -68,4 +77,24 @@ code {
   display: flex;
   padding: 10px;
 
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+  .post-sorting{
+    grid-template-columns: repeat(1,auto);
+    justify-items: center;
+  }
+}
+/* Media query for tablet  */
+@media (min-width: 768px) and (max-width:1023px) {
+  .post-sorting{
+    grid-template-columns: repeat(2,auto);
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+  .post-sorting{
+    grid-template-columns: repeat(3, 440px);
+  }
 }

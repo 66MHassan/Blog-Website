@@ -1,0 +1,19 @@
+/* Css for Home page */
+.main{
+    background-image: url(D:\Blog-website\client\public\images\_methode_sundaytimes_prod_web_bin_7e973780-2393-11e8-a082-a415cb842022.jpg);
+    background-size: cover;
+    height: 590px;
+    position: relative;
+    }
+    
+    .items{
+      height: 590px;
+      position: absolute;
+      color: #fff;
+      text-align: center;
+      line-height: 300px;
+    }
+    
+    .items-btn{
+      background-color: #fff;
+    }

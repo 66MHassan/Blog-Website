@@ -36,3 +36,39 @@
     transform: rotate(360deg);
   }
 }
+
+/* Css for Landing page */
+
+/* App.css */
+
+/* Styles for the landing page */
+.landing-page {
+  position: relative;
+  z-index: 1; /* Default z-index for the landing page */
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  transition: background-color 0.3s; /* Add a smooth transition for background changes */
+}
+
+/* Styles for the forms */
+.form-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  color: #282c34;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 2; /* Forms should have a higher z-index than the landing page */
+  display: none; /* Initially, hide the forms */
+}
+
+
+/* Add this class to blur the background */
+.background-blur {
+  filter: blur(5px);
+  transition: filter 0.3s; /* Add a smooth transition for the blur effect */
+}
+

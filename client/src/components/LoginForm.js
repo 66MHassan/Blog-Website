@@ -1,7 +1,7 @@
 export default function LoginForm(){
     return(
         <>
-        <h1>This is LoginForm</h1>
+        <h1>This is Login Form</h1>
         </>
     )
 }

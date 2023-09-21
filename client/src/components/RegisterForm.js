@@ -1,7 +1,7 @@
 export default function RegisterForm(){
     return(
         <>
-        <h1>This is RegisterForm</h1>
+        <h1>This is Register Form</h1>
         </>
     )
 }
